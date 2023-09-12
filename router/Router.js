@@ -4,6 +4,7 @@ const Router = express.Router();
 
 Router.post('/get',message.GetBotMessage);
 Router.post('/create',message.CreateMessage);
+Router.post('/well',message.wellMessage);
 
 
 module.exports = Router;

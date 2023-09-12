@@ -21,6 +21,13 @@ exports.CreateMessage = async (req, res) => {
   }
 }
 
+exports.wellMessage = async (req, res) => {
+  try {
+      res.send({ MSG: "wellcom to chat"});
+  } catch (error) {
+    res.status(500).json({ error: 'An error occurred' });
+  }
+}
 
 exports.GetBotMessage = async (req, res) => {
   try {
